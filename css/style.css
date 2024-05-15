@@ -1,0 +1,447 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: rgb(78, 49, 125);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    height: 200px; /* Adjust the height as needed */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscription-form {
+    display: flex;
+}
+
+.subscription-form input[type="email"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 250px;
+}
+
+.subscription-form button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: rgb(78, 49, 125);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* button style */
+button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(78, 49, 125);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:rgb(208, 82, 112); /* Lighter shade of pink */
+}
+
+/* body style */
+.container {
+    background-color: #f2f2f2; /* Light gray background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 80vh; /* Full viewport height */
+}
+
+.content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.content h1 {
+    color: rgb(208, 82, 112); /* Pink color */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-start-reading {
+    background-color: rgb(78, 49, 125);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-start-reading:hover {
+    background-color: rgb(208, 82, 112); /* Lighter shade of pink */
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* carosal cards */
+.container1 {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Spacing between cards */
+    padding: 20px;
+    background-color: #f2f2f2; /* Light gray background */
+    scroll-snap-type: x mandatory; /* Enable snap scrolling */
+}
+
+.card {
+    flex: 0 0 auto; /* Prevent cards from growing */
+    width: 300px; /* Card width */
+    background-color: #fff;
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    overflow: hidden;
+    scroll-snap-align: start; /* Align cards at start */
+}
+
+.container1 {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Spacing between cards */
+    padding: 20px;
+    background-color: #f2f2f2; /* Light gray background */
+}
+
+.card {
+    flex: 0 0 auto; /* Prevent cards from growing */
+    width: 300px; /* Card width */
+    background-color: #fff;
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-read-more {
+    display: block;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    background-color: purple;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-read-more:hover {
+    background-color: #ff69b4; /* Lighter shade of pink */
+}
+
+/* Style for feature pick section */
+.feature-pick {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for blog story */
+.blog-story {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-story img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.blog-info {
+    flex: 1;
+}
+
+.blog-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-summary {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.blog-content {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: purple;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #ff69b4;
+}
+
+.main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+article {
+    justify-content: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    margin-top: 20px;
+}
+
+.feature-articles {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article-card {
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+}
+
+.article-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* To make the image round */
+    margin-bottom: 10px;
+}
+
+.article-info h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.article-info p {
+    font-size: 0.9rem;
+}
+
+.aboutus {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-content {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-around;
+}
+
+.about-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 0.9rem;
+}
+
+.about-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-content ul li {
+    margin-bottom: 5px;
+}
+
+.blog-contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-contact-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+

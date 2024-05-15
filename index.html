@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <span>TrioTales</span>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="blogpost.html">Blog</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+            <a href="login.html" class="login-btn"><button type="submit">Login</button></a>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" id="Home">
+            <div class="content">
+                <h1>TrioTales</h1>
+                <!-- <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam?</h2> -->
+                <p>Trio Tales is a harmonious blend of three unique voices, sharing stories, experiences, and perspectives on life, culture, and everything in between. This blog is a creative expression of three individuals, each with their own distinct flavor, coming together to create a rich and vibrant tapestry of thoughts, ideas, and adventures. From personal anecdotes to thought-provoking discussions, Trio Tales is a journey of discovery, connection, and inspiration, where three minds meet and magic happens.</p>
+                <br><br>
+                <a href="blogpost.html" class="btn-start-reading">Start Reading</a>
+            </div>
+            <div class="image">
+                <img src="/images/Group 296.png" alt="Image">
+            </div>
+        </div>
+    </section>
+
+    <h2 style="margin-left:40%; margin-top:5% ;">Our Featured Articles</h2>
+    <section class="feature-articles">
+        <div class="article-card">
+            <a href="blog.html"><img src="/images/blog1.jpg" alt="Article 1"></a>
+            <div class="article-info">
+                <h2>The Power of Friendship: Our Story
+                </h2>
+                <p>We met on the first day of university, just two </p>
+            </div>
+        </div>
+        <div class="article-card">
+            <a href="blog2.html"><img src="/images/blog2.jpg" alt="Article 2"></a>
+            <div class="article-info">
+                <h2>Our Favorite Books and Why They Matter</h2>
+                <p>Jannat Ke Patty and Namal, are more than just stories – they are mirrors to our souls.</p>
+            </div>
+        </div>
+        <div class="article-card">
+            <a href="blog3.html"><img src="/images/blog3.jpg" alt="Article 2"></a>
+            <div class="article-info">
+                <h2>How We Overcome Self-Doubt </h2>
+                <p>Overcoming self-doubt requires a combination of mindfulness.</p>
+            </div>
+        </div>
+        <div class="article-card">
+            <a href="blog4.html"><img src="/images/blog4.jpg" alt="Article 2"></a>
+            <div class="article-info">
+                <h2>The Power of Group Study: Collaborative Learning for Success                </h2>
+                <p>Group study is a dynamic and effective way to learn and understand complex concepts.</p>
+            </div>
+        </div>
+        <div class="article-card">
+            <a href="blog5.html"><img src="/images/blog5.jpg" alt="Article 2"></a>
+            <div class="article-info">
+                <h2>The Allure of Fast Food</h2>
+                <p>Fast food - the ultimate convenience in today's hectic world.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 style="margin-left:40%; margin-top:5% ;">Our Recent Articles</h2>
+        <div class="container1">
+            <div class="card">
+                <img src="/images/blog4.jpg" alt="Feature Image">
+                <div class="card-content">
+                    <h2> The Power of Group Study: Collaborative Learning for Success.                    </h2>
+                    <p>Group study is a dynamic and effective way to learn and understand complex concepts.</p>
+                    <a href="blog5.html" class="btn-read-more">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/blog5.jpg" alt="Feature Image">
+                <div class="card-content">
+                    <h2>The Allure of Fast Food</h2>
+                    <p>Fast food - the ultimate convenience in today's hectic world.</p>
+                    <a href="blog4.html" class="btn-read-more">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/blog3.jpg" alt="Feature Image">
+                <div class="card-content">
+                    <h2> How We Overcome Self-Doubt.                    </h2>
+                    <p>Overcoming self-doubt requires a combination of mindfulness,</p>
+                    <a href="blog3.html" class="btn-read-more">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/blog2.jpg" alt="Feature Image">
+                <div class="card-content">
+                    <h2> Our Favorite Books and Why They Matter                    </h2>
+                    <p>Jannat Ke Patty and Namal, are more than just stories – they are mirrors to our souls.</p>
+                    <a href="blog2.html" class="btn-read-more">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/blog1.jpg" alt="Feature Image">
+                <div class="card-content">
+                    <h2>The Power of Friendship: Our Story                    </h2>
+                    <p>We met on the first day of university, just two</p>
+                    <a href="blog.html" class="btn-read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section><br><br><br><br>
+        <div class="blog-contact-form">
+            <h2>Contact Us</h2>
+            <form action="connect.php" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div><br><br><br>
+    </section>
+    <section>
+        <footer class="footer">
+            <div class="footer-content">
+                <div>
+                    &copy; 2024 Blog Project. All rights reserved.
+                </div>
+                <div class="subscription-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
+
